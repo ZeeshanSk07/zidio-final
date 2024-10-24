@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curved Bottom-Left Edge</title>
+  <style>
+    .curved-box {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #2980b9; /* Border color */
+      border-top: 0;/* Top-left corner is curved */
+      border-right: 0;
+      border-radius: 0 0 0 50px; /* Bottom-left corner is curved */
+       /* Background color */
+      padding: 20px;
+       /* Top-right corner is curved */
+      
+    }
+    .curved-box2 {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #2980b9; /* Border color */
+      border-top:0;
+      border-left: 0;
+      border-bottom: 0;
+
+      border-radius: 0 50px 0 0; /* Bottom-left corner is curved */
+       /* Background color */
+      padding: 20px;
+       /* Top-right corner is curved */
+       }
+  </style>
+</head>
+<body>
+  <div class="curved-box">
+  </div>
+  <div class="curved-box2"></div>
+</body>
+</html>

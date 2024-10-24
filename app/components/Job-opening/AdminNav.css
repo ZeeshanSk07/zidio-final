@@ -1,0 +1,307 @@
+.navbar {
+    top: 0;
+    position: sticky;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    z-index: 9;
+    height: auto;
+    overflow-y: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
+nav {
+    width: 80vw;
+    height: 17vh;
+    background-color: rgb(46,39,33);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 2.5rem;
+    color:#ffffff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-left: 1.5vw;
+    line-height: 6.5vh;
+    padding: 0;
+    position: relative;
+    transform: scale(1);
+    animation: head 0.3s ease;
+}
+
+@keyframes head {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.3vh 0 1vh 0;
+    margin: 0 3vw 0 0;
+    width: fit-content;
+}
+
+nav ul p img{
+    height: 4rem;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+
+nav ul p{
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.new_distribuutor{
+    z-index: -1000;
+    display: flex;
+    position: fixed;
+    right:0;
+}
+
+button{
+    background-color: #69B735;
+    color: white;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    margin: 1.5rem 3rem 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: right;
+    padding: 1.2vh 1vw;
+    font-size: 1.1rem;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    cursor: pointer;
+}
+
+button p{
+    padding: 0;
+    margin: 0 0.2rem 0 0.7rem;
+    font-weight: 600;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(100%); 
+    }
+}
+
+@keyframes leftside {
+    from{
+        
+        transform: translateX(100%)
+    }
+    to{
+        
+        transform: translateX(0);
+    }
+}
+
+.form-container{
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+    padding: 0.5rem 1.5rem;
+    max-width: fit-content;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: fade 0.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0; 
+        transform: translate(-50%, -50%) scale(0.95); 
+    }
+    to {
+        opacity: 1; 
+        transform: translate(-50%, -50%) scale(1); 
+    }
+}
+
+.form-container label{
+    display: block;
+    margin-top: 1rem;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: fit-content;
+}
+
+.form-container form{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: 50vh;
+}
+
+.form-container h1{
+    text-align: center;
+    color: #007BFF;
+    font-weight: 900;
+    
+}
+.addsoil{
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+    float: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+}
+.sidebarlogo{
+    visibility: hidden;
+}
+.charbtn{
+    width: fit-content;
+    height: 4.5vh;
+    margin: 0 auto 0 0.5rem;
+}
+.form-container input{
+    padding: 0.4rem;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+}
+
+.avatar-modal1 {
+    position: fixed !important;
+    left: 0;
+    top: 0; 
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    width: fit-content; 
+    height: 100vh; 
+    background-color: #ffffff;
+    border-radius: 8px 0 0 8px; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateX(0%); 
+    animation: leftside 0.45s linear;
+    font-size: 1.5rem;
+}
+.avatar-modal1.slide-out {
+    animation: slideOut 0.4s forwards; 
+}
+@keyframes slideOut {
+    from {
+        transform: translateX(0%); 
+    }
+    to {
+        transform: translateX(-100%); 
+    }
+}
+
+@keyframes leftside {
+    from{
+        
+        transform: translateX(-100%)
+    }
+    to{
+        
+        transform: translateX(0%);
+    }
+}
+.avatar-modal1 p span {
+    margin-left: 0.8rem;
+    padding-bottom: 0.3rem;
+    align-items: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.avatar-modal1 p {
+    display: flex;
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    padding: 0.7rem 5rem 0.7rem 1.5rem;
+    &:hover{
+        background-color: #E9E9E9;
+        transition: background-color 0.3s ease;
+    }
+}
+.avatar-modal1 p:first-child{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 1.3rem;
+    padding: 0;
+    display: flex;
+    max-width: fit-content;
+    align-items: end;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .navbar{
+        min-width: 100vw;
+    }
+    nav{
+        width: 100vw;
+    }
+    nav h1{
+        font-size: 2rem;
+    }
+    .headimg{
+        margin: auto;
+        margin-right: 0.6rem;
+    }
+    .new_distribuutor button{
+        padding: 0;
+        margin: 1.5rem;
+    }
+    .sidebarlogo{
+        visibility:visible;
+    }
+    nav{
+        margin: 0;
+    }
+    .avatar-modal p {
+        padding-right: 2.5rem;
+    }
+    .sidehead{
+        width: 85vw !important;
+        background-color: #69B735;
+
+    }
+    .sidehead h1 {
+        color: white;
+        font-size: 1.6rem;
+    }
+    .headimg{
+        background-color: white;
+        background-clip: border-box;
+        border-radius: 50%;
+        margin: 0rem 2rem 0 0.5rem;
+        height: 4rem;
+        width: 4rem;
+    }
+}

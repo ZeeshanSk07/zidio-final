@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  background-color: aliceblue;
+}
+/* timeline-item */
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 50%;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.timeline-item:nth-child(even)::before {
+  background-color: #333;
+}
+
+.timeline-item:nth-child(even)::after {
+  background-color: #333;
+}
+
+.timeline-item:nth-child(odd)::before {
+  background-color: #151515;
+}
+
+.timeline-item:nth-child(odd)::after {
+  background-color: #151515;
+}
+
+.timeline-item:last-child::before {
+  height: 50%;
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+.timeline-item.timeline-item-left::before {
+  left: 0;
+}
+
+.timeline-item.timeline-item-left::after {
+  left: 0;
+}
+
+.timeline-item.timeline-item-right::before {
+  left: 100%;
+}
+
+.timeline-item.timeline-item-right::after {
+  left: 100%;
+}
+
+.timeline-item.timeline-item-right {
+  align-items: flex-end;
+}
+
+.timeline-item.timeline-item-right .timeline-content {
+  text-align: right;
+}
+
+.timeline-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

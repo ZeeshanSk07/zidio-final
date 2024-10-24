@@ -1,0 +1,24 @@
+.side{
+    width: 20vw;
+    display: flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.main{
+    width: 80vw !important;
+    display: flex !important;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 768px){
+    .side{
+        display: none;
+        width: 0vw;
+    }
+    .main{
+        width: 100vw;
+    }
+}
