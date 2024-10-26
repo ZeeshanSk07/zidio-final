@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+"use client"
+import React, { useState ,useEffect} from "react";
 import "./AdminLogin.css";
 import { AdminLog } from "../api/user";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { TailSpin } from "react-loader-spinner";
 
 function AdminLogin() {
@@ -11,9 +12,8 @@ function AdminLogin() {
   const [errors, setErrors] = useState({});
 
   const [loading, setLoading] = useState(false);
-
-  const navigate = useNavigate();
-
+  const router = useRouter();
+  
   const login = async (e) => {
     e.preventDefault();
     const newErrors = {};
@@ -30,7 +30,7 @@ function AdminLogin() {
           console.log("Admin login successful.");
           toast.success("Admin login successful");
           localStorage.setItem("userid", response.data.id);
-          navigate("/admin");
+          router.push("/admin");
           setLoading(false);
         } else {
           setErrors({ ...errors, message: "Invalid credentials" });

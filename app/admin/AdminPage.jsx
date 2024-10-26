@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import AdminNav from '../components/Job-opening/AdminNav';
 import AdminDash from '../components/Job-opening/AdminDash';

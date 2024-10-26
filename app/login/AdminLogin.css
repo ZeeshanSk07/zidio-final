@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../assets/bg3.jpg);
+    background-image: url(../../public/footer-galaxy.webp);
     background-size: cover;
     width: 100vw;
     animation: fadeIn 0.5s ease-in-out;

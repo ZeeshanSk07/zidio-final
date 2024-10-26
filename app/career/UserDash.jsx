@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import "./UserDash.css";
 import toast from "react-hot-toast";
@@ -6,12 +7,13 @@ import { IoMdEye } from "react-icons/io";
 import { PiExcludeSquareFill } from "react-icons/pi";
 import { IoBriefcase } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
-import { getAllJobs, getJobById } from "../../api/job";
-import { useNavigate } from "react-router-dom";
-import { applyforjob } from "../../api/application";
+import { getAllJobs, getJobById } from "../api/job";
+import { applyforjob } from "../api/application";
 import { TailSpin } from "react-loader-spinner";
+import { useRouter } from "next/navigation";
 
 function UserDash() {
+
   const [loading, setLoading] = useState(false);
   const [jobs, setJobs] = useState([]);
   const [del, setDel] = useState("");
@@ -41,13 +43,12 @@ function UserDash() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [resume, setResume] = useState("");
+
   useEffect(() => {
     fetchJobs();
   }, []);
 
-
-  const navigate = useNavigate();
-
+  const router = useRouter();
   const fetchJobs = async () => {
     const tok = localStorage.getItem("token");
     setToken(tok);
@@ -138,18 +139,22 @@ function UserDash() {
     }
   };
 
+  const navigateToLogin = () => {
+    router.push('/login');
+  };
   return (
     <div className="Userdashboard">
       <button
-        onClick={(e) => navigate("/login")}
+        onClick={navigateToLogin}
         style={{
           position: "absolute",
-          top: "0",
-          right: "0",
+          top: "5vh",
+          right: "2vw",
           backgroundColor: "rgb(214, 213, 213)",
           color: "black",
           fontWeight: "600",
           zIndex: 10,
+          fontSize:'1rem',
         }}
       >
         Admin

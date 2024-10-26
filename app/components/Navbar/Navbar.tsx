@@ -44,8 +44,8 @@ const Navbar = (props: Props) => {
                                 </a>
                             </li>
                             <li>
-                                <a className='max-lg:font-semibold  flex items-center p-1 hover:text-neutral-300'>
-                                    Career
+                                <a className='max-lg:font-semibold  flex items-center p-1 hover:text-neutral-300' href='/career'>
+                                   Career
                                 </a>
                             </li>
                         </ul>
