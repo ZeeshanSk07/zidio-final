@@ -44,7 +44,7 @@ const testimonials = [
   {
     img: TestimonialImg03,
     clientImg: ClientImg03,
-    name: "Lucy D.",
+    name: "Lucy D.j",
     company: "Rio",
     content:
       "Content creation used to be a bottleneck in our workflow, but not anymore. This AI tool is intuitive and produces top-notch content every time. It's like having an extra team member who never sleeps! Definitely recommend.",

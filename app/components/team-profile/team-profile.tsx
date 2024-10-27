@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-{/** Chetan, images import back spaced  */}
+import WorflowImg01 from "@/public/images/images/workflow-01.png";
+import WorflowImg02 from "@/public/images/images/workflow-02.png";
+import WorflowImg03 from "@/public/images/images/workflow-03.png";
+
 
 
 
@@ -28,7 +31,7 @@ export default function TeamProfile() {
             </p>
           </div>
           {/* Spotlight items */}
-          {/* tanmay */}
+          {/* member 1 */}
           <div className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
             {/* Card 1 */}
             <a
@@ -56,7 +59,7 @@ export default function TeamProfile() {
                 {/* Image */}
                 <Image
                   className="inline-flex"
-                  src="/public/images/workflow-01.png"
+                  src={WorflowImg01}
                   width={350}
                   height={288}
                   alt="Workflow 01"
@@ -66,7 +69,7 @@ export default function TeamProfile() {
                   <div className="mb-3">
                     <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                       <span className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                        Tanmay Nandwana
+                        Member 1
                       </span>
                     </span>
                   </div>
@@ -103,7 +106,7 @@ export default function TeamProfile() {
                 {/* Image */}
                 <Image
                   className="inline-flex"
-                  src="/public/images/workflow-02.png"
+                  src={WorflowImg02}
                   width={350}
                   height={288}
                   alt="Workflow 02"
@@ -113,7 +116,7 @@ export default function TeamProfile() {
                   <div className="mb-3">
                     <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                       <span className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                        Zeeshan Sheikh
+                        Member 2
                       </span>
                     </span>
                   </div>
@@ -150,7 +153,7 @@ export default function TeamProfile() {
                 {/* Image  */}
                 <Image
                   className="inline-flex"
-                  src="/public/images/workflow-03.png"
+                  src={WorflowImg03}
                   width={350}
                   height={288}
                   alt="Workflow 03"
@@ -160,7 +163,7 @@ export default function TeamProfile() {
                   <div className="mb-3">
                     <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                       <span className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                        Sathyaprakash Uppin
+                        Member 3
                       </span>
                     </span>
                   </div>
