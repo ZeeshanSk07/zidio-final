@@ -54,7 +54,7 @@ const Projects = (props: Props) => {
                 <div className='z-[1] inline-block rounded-full px-2 border-2 border-[#abb4ff] relative font-medium bg-gradient-to-r from-[#939aff] to-[#abb4ff] bg-clip-text text-transparent'>
                     <span className='font-semibold text-[12px]'>Did you know?</span>
                 </div>
-                <h3 className="text-[#939aff] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium">56 million projects</h3>
+                <h3 className="text-[#939aff] mb-2 mt-3 lg:text-6xl md:text-5xl text-3xl font-medium">Zidio projects</h3>
                 <p className="mb-3 md:text-xl text-base font-medium text-white">fixed vulnerabilities with GitHub<sup>2</sup></p>
             </div>
         </motion.div>

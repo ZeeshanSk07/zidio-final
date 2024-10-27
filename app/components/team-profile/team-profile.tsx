@@ -21,7 +21,7 @@ export default function TeamProfile() {
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Map our Team journey
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
               Simple and elegant to start collaborating with  team
               in minutes. Team members seamlessly integrates the code in your
               favorite programming languages.
@@ -70,7 +70,7 @@ export default function TeamProfile() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-indigo-200/65">
+                  <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
                     Streamline the product development flow with a content
                     platform that's aligned across specs and insights.
                   </p>
@@ -117,7 +117,7 @@ export default function TeamProfile() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-indigo-200/65">
+                  <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
                     Streamline the product development flow with a content
                     platform that's aligned across specs and insights.
                   </p>
@@ -164,7 +164,7 @@ export default function TeamProfile() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-indigo-200/65">
+                  <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
                     Streamline the product development flow with a content
                     platform that's aligned across specs and insights.
                   </p>

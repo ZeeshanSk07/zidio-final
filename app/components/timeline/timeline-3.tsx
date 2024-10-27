@@ -29,7 +29,7 @@ const Timeline_3 = () => {
 	          <path d="M31,10H15c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S31.6,10,31,10z"/>
 	          <path d="M31,19H15c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S31.6,19,31,19z"/>
 	          <path d="M31,28H15c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S31.6,28,31,28z"/>
-              <rect width="24" height="24" fillOpacacity="0"/>
+              <rect width="24" height="24" fillOpacity="0"/>
             </svg>
             <span className="absolute left-0 top-0 h-full w-full home-campaign-glowing-icon-glow-1 z-3"></span>
           </motion.div>

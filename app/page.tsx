@@ -11,6 +11,7 @@ import Timeline_3 from './components/timeline/timeline-3';
 import Support from './components/support/support';
 import New from './new';
 import TeamProfile from "./components/team-profile/team-profile";
+import Testimonials, { Testimonial } from './components/Testimonial/testimonial';
 
 
 
@@ -44,6 +45,11 @@ export default function Home() {
           <div id='collaboration' className='home-campaign-productivity px-4 pt-8  overflow-hidden'>
             <Collaboration/>
           </div>
+
+          <div id='testimonials' className='home-campaign-productivity px-4 pt-8 pb-16 overflow-hidden'>
+          <Testimonials/>
+          </div>
+          
           <div id='support' className='home-campaign-productivity px-4 pt-8 pb-16 overflow-hidden'>
             <Support/>
           </div>
