@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import WorflowImg01 from "@/public/images/images/workflow-01.png";
-import WorflowImg02 from "@/public/images/images/workflow-02.png";
-import WorflowImg03 from "@/public/images/images/workflow-03.png";
+import WorflowImg01 from "@/public/avatar1.jpeg";
+import WorflowImg02 from "@/public/avatar2.jpeg";
+import WorflowImg03 from "@/public/avatar3.jpeg";
 
 
 
@@ -59,7 +59,7 @@ export default function TeamProfile() {
                 {/* Image */}
                 <Image
                   className="inline-flex"
-                  src={WorflowImg01}
+                  src={WorflowImg03}
                   width={350}
                   height={288}
                   alt="Workflow 01"
@@ -153,7 +153,7 @@ export default function TeamProfile() {
                 {/* Image  */}
                 <Image
                   className="inline-flex"
-                  src={WorflowImg03}
+                  src={WorflowImg01}
                   width={350}
                   height={288}
                   alt="Workflow 03"
