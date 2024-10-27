@@ -30,15 +30,12 @@ email- admin@zidio.in
 password- zidio.org
 
 ## Setup
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Sattu2806/GitHub-Clone.git
 
-2. **Install dependencies**:
+1. **Install dependencies**:
    ```bash
    npm install
 
-3. **Run the development server**:
+2. **Run the development server**:
    ```bash
    npm run dev
 
