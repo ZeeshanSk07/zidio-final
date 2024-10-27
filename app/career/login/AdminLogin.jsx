@@ -1,7 +1,7 @@
 "use client"
 import React, { useState ,useEffect} from "react";
 import "./AdminLogin.css";
-import { AdminLog } from "../api/user";
+import { AdminLog } from "../../api/user";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { TailSpin } from "react-loader-spinner";
@@ -30,7 +30,7 @@ function AdminLogin() {
           console.log("Admin login successful.");
           toast.success("Admin login successful");
           localStorage.setItem("userid", response.data.id);
-          router.push("/admin");
+          router.push("/career/admin");
           setLoading(false);
         } else {
           setErrors({ ...errors, message: "Invalid credentials" });

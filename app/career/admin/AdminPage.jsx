@@ -1,10 +1,10 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import AdminNav from '../components/Job-opening/AdminNav';
-import AdminDash from '../components/Job-opening/AdminDash';
-import Sidebar from '../components/Job-opening/Sidebar';
-import { useNavigate } from 'react-router-dom';
+import AdminNav from '../../components/Job-opening/AdminNav';
+import AdminDash from '../../components/Job-opening/AdminDash';
+import Sidebar from '../../components/Job-opening/Sidebar';
 import "./AdminPage.css";
+import { useRouter } from 'next/navigation';
 
 function AdminPage() {
 
@@ -13,12 +13,12 @@ function AdminPage() {
   const [isapplication, setIsapplication] = useState(false);
 
 
-  const navigate = useNavigate();
+  const router = useRouter();
 
   useEffect(()=>{
     const token = localStorage.getItem('token');
     if(!token){
-      navigate('/jobs');
+      router.push('/career');
     }
   },[])
   return (

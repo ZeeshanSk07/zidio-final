@@ -20,7 +20,7 @@ export default function Home() {
     <div className=' '>
       <div className='relative z-50'>
         <div className='absolute'>
-        <Navbar/>
+          <StickyNav/>
         </div>
       </div>
       <div>
@@ -37,7 +37,7 @@ export default function Home() {
           
           <Timeline_3/>
           </div>
-          <StickyNav/>
+          
           <div id='productivity' className='home-campaign-productivity px-4 pt-8 overflow-hidden'>
             <Productivity/>
           </div>

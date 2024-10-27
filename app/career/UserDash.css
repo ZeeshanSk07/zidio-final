@@ -93,7 +93,7 @@
   }
   button{
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 8px;
   }
   .table-edit-wrapper {
     display: flex; 
@@ -101,26 +101,6 @@
     margin: 0 auto 0.6rem auto; 
     justify-content: center;
     animation: right 0.3s ease;
-  }
-  
-  .table {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 37vw;
-    height: auto;
-    border-radius: 16px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 2vh 1vw;
-    margin-right: 1rem;
-    cursor: pointer;
-    &:hover {
-      background-color: rgb(214, 213, 213);
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-    }
-     z-index: 0;
   }
   
   .table-edit-wrapper {
@@ -138,7 +118,9 @@
     width: 37vw;
     height: auto;
     border-radius: 16px;
-    background-color: white;
+    background-color: rgb(18,23,49);
+    color: white;
+    border: 1px solid gray;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 2vh 1vw;
     margin-right: 1rem;
@@ -219,6 +201,9 @@
         background-color: #E9E9E9;
         transition: background-color 0.3s ease;
     }
+}
+input{
+  border: 1px solid black;
 }
 .avatar-modal1 p:first-child{
     margin-top: 2rem;

@@ -43,11 +43,7 @@ const Navbar = (props: Props) => {
                                     Pricing
                                 </a>
                             </li>
-                            <li>
-                                <a className='max-lg:font-semibold  flex items-center p-1 hover:text-neutral-300' href='/career'>
-                                   Career
-                                </a>
-                            </li>
+                           
                         </ul>
                     </nav>
                     <div className='lg:flex items-center max-lg:flex-col lg:px-0 px-3 mb-3 lg:mb-0 text-left lg:space-x-4'>

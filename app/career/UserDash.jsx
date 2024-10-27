@@ -140,7 +140,7 @@ function UserDash() {
   };
 
   const navigateToLogin = () => {
-    router.push('/login');
+    router.push('/career/login');
   };
   return (
     <div className="Userdashboard">
@@ -152,7 +152,8 @@ function UserDash() {
           right: "2vw",
           backgroundColor: "rgb(214, 213, 213)",
           color: "black",
-          fontWeight: "600",
+          fontWeight: "500",
+          textTransform:'uppercase',
           zIndex: 10,
           fontSize:'1rem',
         }}

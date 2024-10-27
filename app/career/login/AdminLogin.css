@@ -4,12 +4,18 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../../public/footer-galaxy.webp);
+    background-image: url(../../../public/footer-galaxy.webp);
     background-size: cover;
     width: 100vw;
     animation: fadeIn 0.5s ease-in-out;
   }
-  
+  .form-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .form-button{
+    padding: 0.5rem;
+  }
   /* Fade-in animation */
   @keyframes fadeIn {
     0% {
@@ -74,9 +80,9 @@
     padding: 1vh auto;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 1rem;
     transition: background-color 0.3s ease-in-out;
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
     margin: 1rem auto !important;
   }
   

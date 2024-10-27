@@ -9,7 +9,7 @@ import "./Sidebar.css";
 import { updateAdmin } from "../../api/user";
 import toast from "react-hot-toast";
 import {createJob} from "../../api/job";
-import {useNavigate} from 'react-router-dom';
+import {useRouter} from 'next/navigation';
 import { FaHome } from "react-icons/fa";
 import {TailSpin } from 'react-loader-spinner'
 
@@ -38,7 +38,7 @@ function Sidebar({newjob, setNewjob, update, setUpdate, isapplication, setIsappl
   const [skillInput, setSkillInput] = useState('');
   const [companyName, setCompanyName] = useState('');
 
-  const navigate = useNavigate();
+  const router = useRouter();
 
   useEffect(() => {
     const tok = localStorage.getItem("token");
@@ -157,7 +157,7 @@ function Sidebar({newjob, setNewjob, update, setUpdate, isapplication, setIsappl
         <p onClick={(e)=>{
           localStorage.removeItem("token");
           localStorage.removeItem("user");
-          navigate('/jobs');
+          router.push('/career');
         }}>
           <HiOutlineLogout />
           <span>Log out</span>
@@ -216,8 +216,8 @@ function Sidebar({newjob, setNewjob, update, setUpdate, isapplication, setIsappl
               />
             </label>
             <div className="buttons">
-              <button type="submit">Update</button>
-              <button onClick={(e) => setUpdate(false)}>Cancel</button>
+              <button style={{backgroundColor:'rgb(18,23,49)'}} type="submit">Update</button>
+              <button style={{backgroundColor:'rgb(18,23,49)'}} onClick={(e) => setUpdate(false)}>Cancel</button>
             </div>
           </form>
         </div>
@@ -305,7 +305,7 @@ function Sidebar({newjob, setNewjob, update, setUpdate, isapplication, setIsappl
               </label>
               
                     {skills.map((item, index) => (
-                      <span style={{display:"flex" ,alignItems:'center',backgroundColor:'#69B735', width:'fit-content', margin:'0.5rem',borderRadius:'0.4rem', padding:'0.3rem'}} key={index}>{item} <RxCross2 style={{marginLeft:'0.5rem'}} onClick={(e)=>removeskills(index)}/></span>
+                      <span style={{display:"flex" ,alignItems:'center',backgroundColor:'rgb(18,23,49)', width:'fit-content', margin:'0.5rem',borderRadius:'0.4rem',color:'white', padding:'0.3rem'}} key={index}>{item} <RxCross2 style={{marginLeft:'0.5rem'}} onClick={(e)=>removeskills(index)}/></span>
                     ))}
               
             </div>
