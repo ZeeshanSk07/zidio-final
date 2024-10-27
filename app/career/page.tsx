@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 export default function Career(){
     return(
         <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <UserDash/>
         <Footer/>
         </>

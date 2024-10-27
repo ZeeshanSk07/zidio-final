@@ -1,4 +1,3 @@
-"use client"
 import axios from "axios";
 
 const Backend_Url = "https://server-64qt.onrender.com/job";

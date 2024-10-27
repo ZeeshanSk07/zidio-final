@@ -100,7 +100,7 @@ const StickyNav = () => {
 
                   <a href="#security" onClick={() => setSmallNav(false)} onMouseEnter={() => setSecurity1(true)} onMouseLeave={() => setSecurity1(false)} className={` max-lg:pt-2 ${security1 ? "lg:text-blue-500": ""} ${security || smallNav ? "lg:text-blue-500 ": "max-lg:hidden"} `}>Security<div className={`w-10/12 max-lg:hidden mx-auto mt-1 h-[1px] bg-white scale-0 transition ease-in duration-100 ${security1 ? "scale-100 bg-blue-500":""} ${security ? "scale-100 bg-blue-500":""}`}></div></a>
 
-                  <a href="#" onClick={() => {router.push('/career')}} onMouseEnter={() => setCareer1(true)} onMouseLeave={() => setCareer1(false)} className={` max-lg:pt-2 ${career1 ? "lg:text-blue-500": ""} ${career || smallNav ? "lg:text-blue-500 ": "max-lg:hidden"} `}>Career<div className={`w-10/12 max-lg:hidden mx-auto mt-1 h-[1px] bg-white scale-0 transition ease-in duration-100 ${career1 ? "scale-100 bg-blue-500":""} ${career ? "scale-100 bg-blue-500":""}`}></div></a>
+                  <a onClick={() => {router.push('/career')}} onMouseEnter={() => setCareer1(true)} onMouseLeave={() => setCareer1(false)} className={` max-lg:pt-2 cursor-pointer ${career1 ? "lg:text-blue-500": ""} ${career || smallNav ? "lg:text-blue-500 ": "max-lg:hidden"} `}>Career<div className={`w-10/12 max-lg:hidden mx-auto mt-1 h-[1px] bg-white scale-0 transition ease-in duration-100 ${career1 ? "scale-100 bg-blue-500":""} ${career ? "scale-100 bg-blue-500":""}`}></div></a>
               </div>
               
             </div>

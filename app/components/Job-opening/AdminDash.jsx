@@ -59,7 +59,9 @@ function AdminDash({isapplication, setIsapplication}) {
     const tok = localStorage.getItem("token");
     setToken(tok);
     try {
+      setLoading(true);
       const alljobs = await getAllJobs();
+      setLoading(false);
       if (alljobs.status === 200) {
         setJobs(alljobs.data.jobs);
 
@@ -67,6 +69,7 @@ function AdminDash({isapplication, setIsapplication}) {
         console.log("Error fetching jobs:", alljobs.data);
       }
     } catch (error) {
+      setLoading(false);
       console.log("Error fetching jobs:", error);
     }
   };
@@ -144,7 +147,7 @@ function AdminDash({isapplication, setIsapplication}) {
         toast.error("Error deleting job!");
       }
     }catch(err){
-      setLoading("");
+      setLoading(false);
       toast.error("Error deleting job");
     }
   }
@@ -228,6 +231,7 @@ function AdminDash({isapplication, setIsapplication}) {
   return (
     !isapplication ? (
       <div className="dashboard">
+      <h1 className="onhead">Job Openings</h1>
       <GiHamburgerMenu onClick={(e) => {
                setAvatarModal(true);
                setClosing(false);
@@ -306,7 +310,7 @@ function AdminDash({isapplication, setIsapplication}) {
         <RxCross2 onClick={(e)=>{
             setAvatarModal(false);
             setClosing(true);
-          }} size={36} color="black" style={{margin:'1.5rem 0.8rem 3rem 0',position:'absolute', right:'0'}}/>
+          }} size={36} color="white" style={{margin:'1.5rem 0.8rem 3rem 0',position:'absolute', right:'0'}}/>
         <p onClick={(e)=>{
           setIsapplication(false);
           setAvatarModal(false);
@@ -353,20 +357,6 @@ function AdminDash({isapplication, setIsapplication}) {
         </p>
       </div>
         )}
-        {loading ? (
-          <div className="spinner-container">
-            <TailSpin
-              visible={true}
-              
-              color="#4fa94d"
-              ariaLabel="tail-spin-loading"
-              radius="1"
-            />
-          </div>
-        ) : (
-        <>
-        </>
-      )}
 
         {editmodal && (
           <>
@@ -645,6 +635,19 @@ function AdminDash({isapplication, setIsapplication}) {
             </div>
           </>
         )}
+        {!loading ? (
+          <div className="spinner-container1">
+            <TailSpin
+              visible={true}
+              color="#4fa94d"
+              ariaLabel="tail-spin-loading"
+              radius="1"
+            />
+          </div>
+        ) : (
+        <>
+        </>
+      )}
       </div>
     </div>
     ) : (

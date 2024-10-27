@@ -4,6 +4,7 @@ import { getAllApplications } from "../../api/application";
 import toast from "react-hot-toast";
 import { RxCross2 } from "react-icons/rx";
 import { getJobById } from "../../api/job";
+import { TailSpin } from "react-loader-spinner";
 
 const Applications = () => {
   const [application, setApplication] = useState([]);

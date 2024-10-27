@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import "./UserDash.css";
-import toast from "react-hot-toast";
+import toast, { Toaster} from "react-hot-toast";
 import { RxCross2 } from "react-icons/rx";
 import { IoMdEye } from "react-icons/io";
 import { PiExcludeSquareFill } from "react-icons/pi";
@@ -144,6 +144,8 @@ function UserDash() {
   };
   return (
     <div className="Userdashboard">
+      <Toaster position="top-center" reverseOrder={false}/>
+
       <button
         onClick={navigateToLogin}
         style={{
@@ -331,6 +333,7 @@ function UserDash() {
                     type="text"
                     id="name"
                     name="name"
+                    placeholder="Enter Full Name"
                     required
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -341,6 +344,7 @@ function UserDash() {
                     type="email"
                     id="email"
                     name="email"
+                    placeholder="Email address"
                     required
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -352,11 +356,22 @@ function UserDash() {
                     id="Resume"
                     name="Resume"
                     accept="application/pdf"
+                    placeholder="upload resume"
                     required
                     onChange={(e) => setResume(e.target.files[0])}
                   />
                 </div>
-                <button type="submit">Submit</button>
+                <button style={{
+                      display: "flex",
+                      backgroundColor: "rgb(214, 213, 213)",
+                      color: "black",
+                      margin: "1rem auto 1rem auto",
+                      justifyContent: "flex-start",
+                      alignItems: "start",
+                      float: "none",
+                      fontWeight: "600",
+                      zIndex: 10,
+                    }} type="submit">Submit</button>
               </form>
             </div>
           </>

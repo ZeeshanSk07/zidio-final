@@ -248,7 +248,7 @@ input{
       overflow: hidden;
       height: auto;
       padding: 1vh 0vw;
-      background-color:antiquewhite;
+      background-color:rgb(18,23,49);
     }
     .table .triangle {
       visibility: hidden;
@@ -319,8 +319,7 @@ input{
   }
   
   .active1 {
-    background-color: white;
-    color: black;
+    border: 1px solid blue;
   }
 
   .sidebarlogo1{

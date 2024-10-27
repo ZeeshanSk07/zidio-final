@@ -11,7 +11,7 @@ import Timeline_3 from './components/timeline/timeline-3';
 import Support from './components/support/support';
 import New from './new';
 import TeamProfile from "./components/team-profile/team-profile";
-import Testimonials, { Testimonial } from './components/Testimonial/testimonial';
+import Testimonials, { Testimonial } from './components/testimonial/testimonial';
 
 
 

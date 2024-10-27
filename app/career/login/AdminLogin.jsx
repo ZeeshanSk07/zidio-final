@@ -2,7 +2,7 @@
 import React, { useState ,useEffect} from "react";
 import "./AdminLogin.css";
 import { AdminLog } from "../../api/user";
-import toast from "react-hot-toast";
+import toast, {Toaster} from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { TailSpin } from "react-loader-spinner";
 
@@ -27,10 +27,9 @@ function AdminLogin() {
         const response = await AdminLog(email, password);
         console.log(response);
         if (response.status === 200) {
-          console.log("Admin login successful.");
+          router.push("/career/admin");
           toast.success("Admin login successful");
           localStorage.setItem("userid", response.data.id);
-          router.push("/career/admin");
           setLoading(false);
         } else {
           setErrors({ ...errors, message: "Invalid credentials" });
@@ -49,6 +48,7 @@ function AdminLogin() {
 
   return (
     <div className="admin-login-container">
+      <Toaster position="top-center" reverseOrder={false}/>
       <form
         onSubmit={(e) => {
           login(e);

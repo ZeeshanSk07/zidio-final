@@ -57,7 +57,7 @@ const Hero = (props: Props) => {
                         </dd>
                     </dl>
                     <button type="button" className='mb-10 md:mb-0 py-3 w-full home-campaign-signup-button text-[16px] max-md:rounded-md md:rounded-e-md text-white font-semibold'>
-                        Get in touch
+                    Get in touch
                     </button>
                     </div>
                 </form>

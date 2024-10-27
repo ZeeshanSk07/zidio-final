@@ -5,17 +5,18 @@ import { FaUser } from "react-icons/fa";
 import { HiOutlineLogout, HiOfficeBuilding } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useNavigate } from "react-router-dom";
 import { IoIosPaper } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
+import { useRouter } from 'next/navigation';
 
 
 function AdminNav({newjob, setNewjob, update, setUpdate,isapplication, setIsapplication}) {
 
   const [avatarModal, setAvatarModal] = useState(false);
   const [closing, setClosing] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <>
@@ -96,7 +97,7 @@ function AdminNav({newjob, setNewjob, update, setUpdate,isapplication, setIsappl
         <p onClick={(e)=>{
           localStorage.removeItem("token");
           localStorage.removeItem("user");
-          navigate('/jobs');
+          router.push('/career');
         }}>
           <HiOutlineLogout />
           <span>Log out</span>

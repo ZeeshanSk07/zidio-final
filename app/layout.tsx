@@ -5,7 +5,7 @@ import Home from './page'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
+export const viewport = {
   title: 'Zidio Development',
   description: 'Built by Team ZJSSY',
   viewport: 'width=device-width, initial-scale=1.0',
