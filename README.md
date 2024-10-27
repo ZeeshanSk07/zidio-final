@@ -25,6 +25,10 @@ This project is a frontend web application that mimics theZidiohome page with sm
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Framer Motion**: Library for creating animations in React.
 
+## Admin Credentials
+email- admin@zidio.in
+password- zidio.org
+
 ## Setup
 1. **Clone the repository**:
    ```bash
