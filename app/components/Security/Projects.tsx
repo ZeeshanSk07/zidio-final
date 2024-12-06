@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
 type Props = {}
 
@@ -7,11 +8,11 @@ const Projects = (props: Props) => {
     const [hovered, setHovered] = useState<boolean>(false)
   return (
     <div className='flex relative md:pl-10'>
-    <img alt="" aria-hidden="true" width="2712" height="2712" className="absolute top-0 right-0 h-auto pointer-events-none" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp" />
+    <Image alt="img" aria-hidden="true" width="2712" height="2712" className="absolute top-0 right-0 h-auto pointer-events-none" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp" />
     <div className='flex items-center flex-row relative'>
         <motion.div initial={{height:0}} whileInView={{height:'100%'}} className='w-[3px] h-full increase2'></motion.div>
-        <img
-            alt=""
+        <Image
+            alt="img"
             aria-hidden="true"
             width="81"
             height="485"
@@ -43,7 +44,7 @@ const Projects = (props: Props) => {
                 <div className='relative'>
                     <div className='relative'>
                         <div className='md:absolute z-[1] top-[-100px] lg:top-[-200px] right-0 shadow-2xl'>
-                        <img src="https://github.githubassets.com/images/modules/site/home-campaign/illu-ghas-list.png" alt="" loading="lazy" decoding="async" width="1190" height="1004" className="w-full h-auto d-block rounded-lg" />
+                        <Image src="https://github.githubassets.com/images/modules/site/home-campaign/illu-ghas-list.png" alt="img" loading="lazy" decoding="async" width="1190" height="1004" className="w-full h-auto d-block rounded-lg" />
                         </div>  
                     </div>
                 </div>

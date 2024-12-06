@@ -5,6 +5,7 @@ import CodeSpace from './CodeSpace'
 import HoverCard from './HoverCard'
 import CopilotFeature from './CopilotFeature'
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
 type Props = {}
 
@@ -52,7 +53,7 @@ const Productivity = (props: Props) => {
                         </div>
                     </div>
                     <div className='overflow-hidden rounded-s-lg'>
-                        <img className="w-full h-auto js-build-in-item build-in-scale-fade build-in-animate" width="1209" height="890" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-actions.png" />
+                        <Image className="w-full h-auto js-build-in-item build-in-scale-fade build-in-animate" width="1209" height="890" loading="lazy" decoding="async" alt="img" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-actions.png" />
                     </div>
                 </HoverCard>
                 <HoverCard backgroundColor='#7ee787' direction='flex-col' left='-400px'>
@@ -67,7 +68,7 @@ const Productivity = (props: Props) => {
                         </div>
                     </div>
                     <div className='overflow-hidden rounded-s-lg'>
-                    <img className="w-full  h-auto" width="1208" height="764" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-mobile.png" />
+                    <Image className="w-full  h-auto" width="1208" height="764" loading="lazy" decoding="async" alt="img" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-mobile.png" />
                     </div>
                 </HoverCard>
             </div>

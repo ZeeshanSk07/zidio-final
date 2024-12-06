@@ -1,6 +1,7 @@
 'use client'
 import React, {useState} from 'react'
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
 type Props = {}
 
@@ -13,11 +14,11 @@ const CodeSpace = (props: Props) => {
     }
   return (
     <div className='flex relative md:pl-10'>
-    <img alt="" aria-hidden="true" width="2712" height="2712" className="absolute top-0 right-0 h-auto pointer-events-none" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp" />
+    <Image alt="Image" aria-hidden="true" width="2712" height="2712" className="absolute top-0 right-0 h-auto pointer-events-none" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp" />
     <div className='flex items-center flex-row relative'>
         <motion.div variants={lineVariant} initial='hidden' whileInView='show' viewport={{once:false}} transition={{duration:0.3}}  className='w-[3px] h-full increase origin-top'></motion.div>
-        <img
-            alt=""
+        <Image
+            alt="img"
             aria-hidden="true"
             width="81"
             height="485"
@@ -50,10 +51,10 @@ const CodeSpace = (props: Props) => {
                 <div className='relative'>
                     <div className='flex flex-row relative'>
                         <motion.div initial={{opacity:0, x:-30}} whileInView={{opacity:1, x:0}} transition={{type: "tween"}}  className='sm:absolute z-[1] top-[-200px] right-7 shadow-2xl'>
-                            <img src="/pic.png" alt=""  loading="lazy" decoding="async" className=" w-[300px] h-auto rounded-md" />
-                            <img
+                            <Image width={60} height={96} src="/pic.png" alt="img"  loading="lazy" decoding="async" className=" w-[300px] h-auto rounded-md" />
+                            <Image
                                 src="https://github.githubassets.com/images/modules/site/codespaces/illo-cursor.png"
-                                alt=""
+                                alt="img"
                                 loading="lazy"
                                 decoding="async"
                                 className="absolute js-build-in-item build-in-slideX-left h-auto build-in-animate"
@@ -68,12 +69,12 @@ const CodeSpace = (props: Props) => {
                                 />
                         </motion.div>  
                         <motion.div initial={{opacity:0, x:30}} whileInView={{opacity:1, x:0}} transition={{type: "tween", delay:0.1}} className=" overflow-hidden max-w-[373px] bottom-0 rounded-md relative hidden sm:block build-in-animate" >
-                            <img
+                            <Image
                                 src="https://github.githubassets.com/images/modules/site/codespaces/illo-ports.png"
                                 loading="lazy"
                                 width="746"
                                 height="368"
-                                alt=""
+                                alt="img"
                                 decoding="async"
                                 className="width-full d-block h-auto"
                             />

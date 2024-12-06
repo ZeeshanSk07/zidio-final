@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 
 type Props = {}
@@ -9,10 +10,10 @@ const Hero = (props: Props) => {
     const [hovered1, setHovered1] = useState<boolean>(false)
   return (
     <div className='relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16'>
-        <img className='absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0' width="500" height="326" src="/hero-drone.png" alt="" />
+        <Image className='absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0' width="500" height="326" src="/hero-drone.png" alt="" />
         <div className='flex'>
             <div className='relative '>
-                <img aria-hidden="true" className='' src="/lines-hero.svg" width="437" height="637" alt="" />
+                <Image aria-hidden="true" className='' src="/lines-hero.svg" width="437" height="637" alt="" />
                 <div className='mx-auto my-3 '>
                     <span className='relative z-[11]'>
                     <svg aria-hidden="true" height="24" viewBox="0 0 24 24" fill='currentColor' version="1.1" width="24" data-view-component="true" className=" text-white">
@@ -70,12 +71,12 @@ const Hero = (props: Props) => {
                 <div className='md:my-32 my-24'>
                 <p className="text-[16px] leading-[24px] text-[#7d8590]">Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎</p>
                 <div className="flex flex-wrap justify-between items-center">
-                <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg" alt="Stripe logo" height="44" className="my-3 scale-90"/>
-                <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg" alt="Pinterest logo" height="44" className="my-3 scale-90"/>
-                <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg" alt="KPMG logo" height="44" className="my-3 scale-90"/>
-                <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg" alt="Mercedes-Benz logo" height="44" className="my-3 w-[200px]"/>
-                <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg" alt="P&amp;G logo" height="32" className="my-3 scale-90"/>
-                <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg" alt="Telus logo" height="32" className="my-3 scale-90"/>
+                <Image src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg" alt="Stripe logo" height="44" className="my-3 scale-90"/>
+                <Image src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg" alt="Pinterest logo" height="44" className="my-3 scale-90"/>
+                <Image src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg" alt="KPMG logo" height="44" className="my-3 scale-90"/>
+                <Image src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg" alt="Mercedes-Benz logo" height="44" className="my-3 w-[200px]"/>
+                <Image src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg" alt="P&amp;G logo" height="32" className="my-3 scale-90"/>
+                <Image src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg" alt="Telus logo" height="32" className="my-3 scale-90"/>
                 </div>
                 </div>
             </div>

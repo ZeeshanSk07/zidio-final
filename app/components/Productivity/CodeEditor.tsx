@@ -1,6 +1,7 @@
 import React from 'react'
 import CodeBlock from './CodeBlock'
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
 type Props = {}
 
@@ -160,7 +161,7 @@ const CodeEditor = (props: Props) => {
                 </div>
             </div>
             <div className='px-6 flex items-center justify-between h-full bg-[#040d21]'>
-                <img className="w-full h-auto md:block" width="1238" height="1404" loading="lazy" decoding="async" alt="Planet earth with visualization ofZidioactivity crossing the globe" src="https://github.githubassets.com/images/modules/site/home/globe.jpg"/>
+                <Image className="w-full h-auto md:block" width="1238" height="1404" loading="lazy" decoding="async" alt="Planet earth with visualization ofZidioactivity crossing the globe" src="https://github.githubassets.com/images/modules/site/home/globe.jpg"/>
             </div>
         </div>
     </div>

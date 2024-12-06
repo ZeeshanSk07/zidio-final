@@ -18,7 +18,7 @@ import Testimonials, { Testimonial } from './components/testimonial/testimonial'
 export default function Home() {
   
   return (
-    <div className=' '>
+    <>
       <div className='relative z-50'>
         <div className='absolute'>
           <StickyNav/>
@@ -27,7 +27,7 @@ export default function Home() {
       <div>
         <div className='overflow-hidden'>
           <div className='relative'>
-            <img className='absolute top-0 transition ease-in duration-200 max-xl:right-[-1050px] xl:right-[-970px] -z-30 image' width='4377' src="https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp" alt="" />
+            <Image className='absolute top-0 transition ease-in duration-200 max-xl:right-[-1050px] xl:right-[-970px] -z-30 image' width='4377' height='4377' src="https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp" alt="img" />
           </div>
           <div className='hero-section px-3 '>
             <Hero/>
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </div>
       <Footer/>
-    </div>
+    </>
     
   );
 }

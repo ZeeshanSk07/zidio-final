@@ -6,9 +6,7 @@ const Timeline_2 = () => {
   return (
     <div className="py-12">
       {/* Header */}
-      <h2 className="text-4xl font-bold text-center mb-12 text-white">
-        Zidio Development's Journey
-      </h2>
+      <h2 className="text-4xl font-bold text-center mb-12 text-white">Zidio Development's Journey</h2>
 
       {/* Timeline Container */}
       <div className="relative max-w-5xl mx-auto">

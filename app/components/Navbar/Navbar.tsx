@@ -6,6 +6,7 @@ import SolutionNav from './SolutionNav'
 import OpenSourceNav from './OpenSourceNav'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -22,7 +23,7 @@ const Navbar = (props: Props) => {
                         <a href="" className='px-2 py-[6px] border-[1px] rounded-md hover:text-neutral-400'>Sign up</a>
                 </div>
                 <a className='' href="https://github.com">
-                <img width={32} height={32} src='/logo.svg' aria-hidden="true"  data-view-component="true" className=" text-white" />
+                <Image alt='img' width={32} height={32} src='/logo.svg' aria-hidden="true"  data-view-component="true" className=" text-white" />
                 </a>
                 <button type='button' onClick={() => setShowNav(!showNav)} className='lg:hidden cursor-pointer'>
                     <div className={`w-[23px] h-[2px] transition ease-in duration-150  bg-white ${showNav ? "rotate-45 mb-0  translate-y-[1px]" : "rotate-0 mb-1"} `}></div>

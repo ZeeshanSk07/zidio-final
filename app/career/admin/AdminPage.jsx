@@ -24,7 +24,7 @@ function AdminPage() {
     if(!token){
       router.push('/career');
     }
-  },[])
+  },[router])
   return (
     <>
         {/* <div id='nav' className={`absolute h-[100px] z-[3] transition ease-in duration-150 ${isSticky ? "visible": "invisible"}`}>

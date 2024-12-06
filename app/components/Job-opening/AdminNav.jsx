@@ -8,6 +8,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosPaper } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import { TailSpin } from "react-loader-spinner";
 
 
 function AdminNav({newjob, setNewjob, update, setUpdate,isapplication, setIsapplication}) {
@@ -28,7 +30,7 @@ function AdminNav({newjob, setNewjob, update, setUpdate,isapplication, setIsappl
               }} className="sidebarlogo" color="#eaeaea" size={34}/>
           <ul>
             <p>
-              <img src={avatar} alt="avatar" />
+              <Image src={avatar} alt="avatar" />
             </p>
           </ul>
         </nav>

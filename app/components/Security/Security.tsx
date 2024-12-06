@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import HoverCard from '../Productivity/HoverCard'
 import Projects from './Projects'
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
 type Props = {}
 
@@ -126,7 +127,7 @@ const Security = (props: Props) => {
                 </div>
             </div>
             <motion.div initial={{scale:0.9, opacity:0}} whileInView={{scale:1, opacity:1}} transition={{type:'tween'}} className='rounded-r-md overflow-hidden flex items-center'>
-                <img className="responsive js-build-in-item build-in-scale-fade build-in-animate origin-bottom-right" width="1288" height="992" loading="lazy" decoding="async" alt="" aria-hidden="true" src="/3.png" />
+                <Image className="responsive js-build-in-item build-in-scale-fade build-in-animate origin-bottom-right" width="1288" height="992" loading="lazy" decoding="async" alt="img" aria-hidden="true" src="/3.png" />
             </motion.div>
             </HoverCard>
         </div>
@@ -143,7 +144,7 @@ const Security = (props: Props) => {
                         </div>
                     </div>
                     <div className='overflow-hidden rounded-s-lg'>
-                        <img className="w-full h-auto js-build-in-item build-in-scale-fade build-in-animate" width="1209" height="890" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-dependabot.png" />
+                        <Image className="w-full h-auto js-build-in-item build-in-scale-fade build-in-animate" width="1209" height="890" loading="lazy" decoding="async" alt="img" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-dependabot.png" />
                     </div>
                 </HoverCard>
                 <HoverCard backgroundColor = '#939aff' direction='flex-col' left='-400px'>
@@ -158,7 +159,7 @@ const Security = (props: Props) => {
                         </div>
                     </div>
                     <div className='overflow-hidden rounded-s-lg'>
-                    <img className="w-full h-auto " width="1208" height="764" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-code-scanning.png" />
+                    <Image className="w-full h-auto " width="1208" height="764" loading="lazy" decoding="async" alt="img" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-code-scanning.png" />
                     </div>
                 </HoverCard>
         </div>

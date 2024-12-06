@@ -74,8 +74,7 @@ export default function TeamProfile() {
                     </span>
                   </div>
                   <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                    Streamline the product development flow with a content
-                    platform that's aligned across specs and insights.
+                  Streamline the product development flow with a content <br/>platform that's aligned across specs and insights.
                   </p>
                 </div>
               </div>
@@ -121,8 +120,7 @@ export default function TeamProfile() {
                     </span>
                   </div>
                   <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                    Streamline the product development flow with a content
-                    platform that's aligned across specs and insights.
+                    Streamline the product development flow with a content<br/>platform that's aligned across specs and insights.
                   </p>
                 </div>
               </div>
@@ -152,12 +150,12 @@ export default function TeamProfile() {
                 </div>
                 {/* Image  */}
                 <Image
-                  className="inline-flex"
-                  src={WorflowImg01}
-                  width={350}
-                  height={288}
-                  alt="Workflow 03"
-                />
+  className="inline-flex"
+  src={WorflowImg01}
+  width={350}
+  height={288}
+  alt="Workflow 01"
+/>
                 {/* Content */}
                 <div className="p-6">
                   <div className="mb-3">
@@ -168,8 +166,7 @@ export default function TeamProfile() {
                     </span>
                   </div>
                   <p className="bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                    Streamline the product development flow with a content
-                    platform that's aligned across specs and insights.
+                    Streamline the product development flow with a content<br/>platform that's aligned across specs and insights.
                   </p>
                 </div>
               </div>
